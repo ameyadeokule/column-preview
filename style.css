@@ -1,0 +1,87 @@
+body {
+	background: hsl(0, 0%, 95%);
+	position: relative;
+	padding-top: 5rem;
+}
+
+.main {
+	display: flex;
+	max-width: 930px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.card h1 {
+	color: hsl(0, 0%, 95%);
+	font-family: 'Big Shoulders Display', cursive;
+}
+
+.card p {
+	color: hsla(0, 0%, 100%, 0.75);
+	height: 9rem;
+	font-size: 15px;
+	line-height: 1.5rem;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (max-width: 750px) {
+	.card p {
+		height: auto;
+	}
+}
+
+.card {
+	padding: 3rem 1.75rem;
+}
+
+.sedan {
+	border-radius: 10px 0 0 10px;
+	background: hsl(31, 77%, 52%);
+}
+
+.suv {
+	background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background: hsl(179, 100%, 13%);
+	border-radius: 0 10px 10px 0;
+}
+
+.card a {
+	margin-top: 2rem;
+}
+
+button {
+	background: hsl(0, 0%, 95%);
+	padding: 0.75rem 1rem;
+	border-radius: 50px;
+	border: 1px solid hsl(0, 0%, 95%);
+	cursor: pointer;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+button:hover {
+	background: inherit;
+	color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 375px) {
+	body {
+		padding: 3rem 0.2rem;
+	}
+
+	.main {
+		padding: 0.5rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sedan {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.luxury {
+		border-radius: 0 0 10px 10px;
+	}
+}
